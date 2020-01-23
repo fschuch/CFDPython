@@ -27,7 +27,7 @@ Lições
 > Execute uma seção interativa desta versão do CFD Python em seu navegador usando o serviço Binder:
 [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/fschuch/CFDPython-BR/master/)
 
-Passos 1 a 4 são em uma direção espacial. Passos 5 a 10 são em duas dimensões (2D). Passos 11 e 12 resolvem as equações da Navier-Stokes em 2D. Três Notebooks "bônus" cobrem a condição CFL de estabilidade, operações de arranjos multi-dimensionais com NumPy e definição de funções em Python.
+Passos 1 a 4 são em uma direção espacial. Passos 5 a 10 são em duas dimensões (2D). Passos 11 e 12 resolvem as equações de Navier-Stokes em 2D. Três Notebooks "bônus" cobrem a condição CFL de estabilidade, operações de arranjos multi-dimensionais com NumPy e definição de funções em Python.
 
 * [Ligeira Introdução à Python](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/00_Ligeira_Intro_Python_.ipynb)
 -- Para novatos em Python, essa lição introduz bibliotecas numéricas (NumPy e Matplotlib), variáveis em Python, endentação e manipulação de arranjos.
