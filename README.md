@@ -1,86 +1,85 @@
 
 # CFD Python
 
-> Please cite as: Barba, Lorena A., and Forsyth, Gilbert F. (2018). CFD Python: the 12 steps to Navier-Stokes equations. _Journal of Open Source Education_, **1**(9), 21, https://doi.org/10.21105/jose.00021
+**CFD Python**, também conhecido como os **12 passos para Navier-Stokes**, é um módulo prático para o aprendizado dos fundamentos de Dinâmica dos Fluidos Computacional (CFD, do Inglês *Computational Fluid Dynamics*) por meio de códigos que resolvem as equações diferenciais parciais que descrevem a física dos escoamentos.
+Esta é uma adaptação e tradução para português por [Felipe N. Schuch](https://fschuch.github.io/). Os textos e códigos originais foram parte do curso ministrado pela [Prof. Lorena Barba](http://lorenabarba.com) entre 2009 e 2013 no departamento de Engenharia Mecânica da Universidade de Boston (Prof. Barba então se mudou para Universidade George Washington), e estão publicado em:
 
-[![DOI](https://jose.theoj.org/papers/10.21105/jose.00021/status.svg)](https://doi.org/10.21105/jose.00021)
+> Barba, Lorena A., and Forsyth, Gilbert F. (2018). CFD Python: the 12 steps to Navier-Stokes equations. _Journal of Open Source Education_, **1**(9), 21, https://doi.org/10.21105/jose.00021
 
-**CFD Python**, a.k.a. the **12 steps to Navier-Stokes**, is a practical module for learning the foundations of Computational Fluid Dynamics (CFD) by coding solutions to the basic partial differential equations that describe the physics of fluid flow.
-The module was part of a course taught by [Prof. Lorena Barba](http://lorenabarba.com) between 2009 and 2013 in the Mechanical Engineering department at Boston University (Prof. Barba since moved to the George Washington University).
+O módulo assume que o leitor tenha conhecimentos básicos sobre programação (qualquer linguagem) e alguma familiaridade com equações diferenciais e mecânica dos fluidos. Os "passos" foram inspirados pelas ideias do Dr. Rio Yokota, que era um pós-doc no laboratório da Prof. Barba até 2011, e as lições foram refinadas pela Prof. Barba e seus estudantes ao longo de vários semestres de ensino do curso de CFD.
+O curso foi transcrito para o conjunto de Júpiter Notebooks em 2013 para ensinar em um curso intensivo de dois dias em Mendoza, Argentina.
 
-The module assumes only basic programming knowledge (in any language) and some background in partial differential equations and fluid mechanics. The "steps" were inspired by ideas of Dr. Rio Yokota, who was a post-doc in Prof. Barba's lab until 2011, and the lessons were refined by Prof. Barba and her students over several semesters teaching the CFD course. 
-We wrote this set of Jupyter notebooks in 2013 to teach an intensive two-day course in Mendoza, Argentina.
+Guiando estudantes através destes passos (sem falhar nenhum!), pode ensina-los lições valiosas. A constante evolução entre os exercícios proporciona um senso de recompensa ao final de cada atividade, e eles sentem que estão aprendendo com pouco esforço. Conforme avançam, eles naturalmente praticam como reutilizar trechos de código e progressivamente aprendem técnicas de programação e visualização. Enquanto eles analisam os resultados, aprendem sobre difusão, precisão e convergência.
+Em cerca de quatro semanas em um curso de agenda regular, os alunos tornam-se programadores relativamente bem preparados e estão motivados para se engajar em questões de maior complexidade teórica.
 
-Guiding students through these steps (without skipping any!), they learn many valuable lessons. The incremental nature of the exercises means they get a sense of achievement at the end of each assignment, and they feel they are learning with low effort. As they progress, they naturally practice code re-use and they incrementally learn programming and plotting techniques. As they analyze their results, they learn about numerical diffusion, accuracy and convergence. 
-In about four weeks of a regularly scheduled course, they become moderately proficient programmers and are motivated to start discussing more theoretical matters.
+## Como utilizar este módulo
 
-## How to use this module
+Em uma disciplina universitária regular, os alunos podem completar as lições do **CFD com Python** em 4 a 5 semanas.
+Como um curso intensivo, o módulo pode ser ministrado em 2 a 3 dias completos, à depender do conhecimento prévio da audiência.
+As lições podem ser empregados por estudantes autodidatas.
+Em todos os casos, o aluno é encorajado a seguir o trabalho de cada lição paralelamente ao reescrever em um Jupyter Notebook novo, mantendo anotações pessoais de seu progresso e de seus experimentos.
 
-In a regular-session university course, students can complete the **CFD Python** lessons in 4 to 5 weeks. 
-As an intensive tutorial, the module can be completed in two or three full days, depending on the learner's prior experience. 
-The lessons can also be used for self study. 
-In all cases, learners should follow along the worked examples in each lesson by re-typing the code in a fresh Jupyter notebook, maybe taking original notes as they try things out. 
-
-Lessons
+Lições
 -------
-> Launch an interactive session with this module using the Binder service:
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/barbagroup/CFDPython/master)
 
-Steps 1–4 are in one spatial dimension. Steps 5–10 are in two dimensions (2D). Steps 11–12 solve the Navier-Stokes equation in 2D. Three "bonus" notebooks cover the CFL condition for numerical stability, array operations with NumPy, and defining functions in Python.
+> Execute uma seção interativa desta versão do CFD Python em seu navegador usando o serviço Binder:
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/fschuch/CFDPython/master)
 
-* [Quick Python Intro](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/00_Quick_Python_Intro.ipynb)
-—For Python novices, this lesson introduces the numerical libraries (NumPy and Matplotlib), Python variables, use of whitespace, and slicing arrays.
-* [Step 1](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/01_Step_1.ipynb)
-—Linear convection with a step-function initial condition (IC) and appropriate boundary conditions (BCs).
-* [Step 2](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/02_Step_2.ipynb)
-—With the same IC/BCs, _nonlinear_ convection.
-* [CFL Condition](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/03_CFL_Condition.ipynb)
-—Exploring numerical stability and the Courant-Friedrichs-Lewy (CFL) condition.
-* [Step 3](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/04_Step_3.ipynb)
-—With the same IC/BCs, _diffusion_ only.
-* [Step 4](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/05_Step_4.ipynb)
-—Burgers’ equation, with a saw-tooth IC and periodic BCs (with an introduction to Sympy).
-* [Array Operations with NumPy](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/06_Array_Operations_with_NumPy.ipynb)
-* [Step 5](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/07_Step_5.ipynb)
-—Linear convection in 2D with a square-function IC and appropriate BCs.
-* [Step 6](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/08_Step_6.ipynb)
-—With the same IC/BCs, _nonlinear_ convection in 2D.
-* [Step 7](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/09_Step_7.ipynb)
-—With the same IC/BCs, _diffusion_ in 2D.
-* [Step 8](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/10_Step_8.ipynb)
-—Burgers’ equation in 2D
-* [Defining Functions in Python](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/11_Defining_Function_in_Python.ipynb)
-* [Step 9](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/12_Step_9.ipynb)
-—Laplace equation with zero IC and both Neumann and Dirichlet BCs.
-* [Step 10](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/13_Step_10.ipynb)
-—Poisson equation in 2D.
-* [Step 11](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/14_Step_11.ipynb)
-—Solves the Navier-Stokes equation for 2D cavity flow.
-* [Step 12](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/15_Step_12.ipynb)
-—Solves the Navier-Stokes equation for 2D channel flow.
+Passos 1 a 4 são em uma direção espacial. Passos 5 a 10 são em duas dimensões (2D). Passos 11 e 12 resolvem as equações da Navier-Stokes em 2D. Três Notebooks "bônus" cobrem a condição CFL de estabilidade, operações de arranjos multi-dimensionais com NumPy e definição de funções em Python.
 
-
-
-
-## Dependencies
-
-To use these lessons, you need Python 3, and the standard stack of scientific Python: NumPy, Matplotlib, SciPy, Sympy. And of course, you need [Jupyter](http://jupyter.org)—an interactive computational environment that runs on a web browser.
-
-This mini-course is built as a set of [Jupyter notebooks](https://jupyter-notebook.readthedocs.org/en/latest/notebook.html) containing the written materials and worked-out solutions on Python code. To work with the material, we recommend that you start each lesson with a fresh new notebook, and follow along, typing each line of code (don't copy-and-paste!), and exploring by changing parameters and seeing what happens. 
+* [Ligeira Introdução à Python](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/00_Ligeira_Intro_Python_.ipynb)
+-- Para novatos em Python, essa lição introduz bibliotecas numéricas (NumPy e Matplotlib), variáveis em Python, endentação e manipulação de arranjos.
+* [Passo 1](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/01_Passo_1.ipynb)
+-- Convecção linear com avanço à partir da condição inicial (CI) e condições de contorno (CC) apropriadas.
+* [Passo 2](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/02_Passo_2.ipynb)
+-- Com as mesmas CI/BCs, convecção _não linear_.
+* [Condição CFL](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/03_Condicao_CFL.ipynb)
+-- Explorando a estabilidade numérica e a condição de Courant-Friedrichs-Lewy (CFL).
+* [Passo 3](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/04_Passo_3.ipynb)
+-- Com as mesmas CI/BCs, apenas _difusão_.
+* [Passo 4](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/05_Passo_4.ipynb)
+-- Equação de Burgers, com CI _dente de serra_ e CC periódica (e uma introdução ao SymPy).
+* [Operações com arranjos em NumPy](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/06_Operacoes_de_arranjos_com_NumPy.ipynb)
+* [Passo 5](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/07_Passo_5.ipynb)
+-- Convecção linear 2D com CI função quadrada e CC apropriadas.
+* [Passo 6](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/08_Passo_6.ipynb)
+-- Com as mesmas CI/BCs, convecção _não linear_ 2D.
+* [Passo 7](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/09_Passo_7.ipynb)
+-- Com as mesmas CI/BCs, _difusão_ 2D.
+* [Passo 8](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/10_Passo_8.ipynb)
+-- Equação de Burgers 2D.
+* [Definindo Funções em Python](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/11_Definindo_Funcoes_em_Python.ipynb)
+* [Passo 9](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/12_Passo_9.ipynb)
+-- Equação de Laplace 2D com CI zero e CC ambas Neumann e Dirichlet.
+* [Passo 10](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/13_Passo_10.ipynb)
+-- Equação de Poisson 2D.
+* [Passo 11](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/14_Passo_11.ipynb)
+-- Resolve o escoamento em Cavidade com Navier-Stokes 2D.
+* [Passo 12](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/15_Passo_12.ipynb)
+-- Resolve o escoamento em Canal com Navier–Stokes 2D.
 
 
-#### Installing via Anaconda
-We *highly* recommend that you install the [Anaconda Python Distribution](http://docs.continuum.io/anaconda/install). It will make your life so much easier. 
-You can download and install Anaconda on Windows, OSX and Linux. 
 
-After installing, to ensure that your packages are up to date, run the following commands in a terminal:
+
+## Dependências
+
+Para executar estas lições, você precisa de Python 3 e um conjunto das bibliotecas científicas padrões: NumPy, Matplotlib, SciPy e SymPy. E claro, você precisa de [Jupyter](http://jupyter.org), um ambiente multiplataforma e interativo, que roda no navegador web.
+
+Este mini curso é construído em uma série de [Jupyter notebooks](https://jupyter-notebook.readthedocs.org/en/latest/notebook.html), que contem tanto o material descritivo quanto as soluções propostas programadas em Python. Para trabalhar com este material, recomenda-se que você comece cada lição com um novo notebook em branco e siga lado a lado, digitando cada linha de código (não copie e cole!), aproveite para explorar modificando parâmetros e vendo o que acontecerá.
+
+
+#### Intalação via Anaconda
+
+Nós recomendamos *fortemente* que você instale a [distribuição de Python Anaconda](http://docs.continuum.io/anaconda/install). Ela vai facilitar a sua vida. Você pode baixar e instalar em Windows, OSX e Linux.
+
+Após a instalação, tenha certeza que todos os pacotes estão atualizados, execute os comandos a seguir em um terminal:
 
 ```Bash
 conda update conda
 conda update jupyter numpy sympy scipy matplotlib
 ```
 
-If you prefer Miniconda (a mini version of Anaconda that saves you disk space), install all the necessary libraries to follow this course by running the following commands in a terminal:
+Se você preferir Miniconda (uma versão reduzida de Anaconda que necessita menos espaço em disco), instale as bibliotecas necessárias para seguir o curso por meio dos seguintes comandos no terminal:
 
 ```Bash
 conda update conda
@@ -89,39 +88,38 @@ conda install numpy scipy sympy matplotlib
 ```
 
 
-#### Without Anaconda
-If you already have Python installed on your machine, you can install Jupyter using pip:
+#### Sem Anaconda
+
+Se você já possui Python instalado na sua máquina, você pode instalar o Jupyter usando o pip:
 
 ```Bash
 pip install jupyter
 ```
 
-Please also make sure that you have the necessary libraries installed by running
+Tenha certeza que todas as bibliotecas necessárias estão instaladas por meio do comando:
 
 ```Bash
 pip install numpy scipy sympy matplotlib
 ```
 
+### Executando o servidor notebook
 
-### Running the notebook server
-
-Once Jupyter is installed, open up a terminal and then run 
+Uma vez que o Jupyter esteja instalado, abra um terminal e então execute:
 
 ```Bash
 jupyter notebook
 ```
 
-This will start up a Jupyter session in your browser!
+Isso vai iniciar uma seção Jupyter em seu navegador!
 
-## How to contribute to CFD Python
+## Como contribuir com CFD com Python
 
-We accept contributions via pull request—in fact, several users have already submitted pull requests making corrections or small improvements. You can also open an issue if you find a bug, or have a suggestion. 
+Assim como sugerido na versão original, contribuições também serão bem-vindas na versão brasileira. Usuários são convidados a sugerir correções e pequenas melhorias via *pull request*. Você também pode abrir um *issue* se encontrar um bug ou tiver qualquer sugestão.
 
 ## Copyright and License
 
-(c) 2017 Lorena A. Barba, Gilbert F. Forsyth. All content is under Creative Commons Attribution [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.txt), and all [code is under BSD-3 clause](https://github.com/engineersCode/EngComp/blob/master/LICENSE) (previously under MIT, and changed on March 8, 2018). 
+(c) Original por Lorena A. Barba, Gilbert F. Forsyth em 2017, traduzido por Felipe N. Schuch em 2020. All content is under Creative Commons Attribution [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.txt), and all [code is under BSD-3 clause](https://github.com/engineersCode/EngComp/blob/master/LICENSE) (previously under MIT, and changed on March 8, 2018).
 
-We are happy if you re-use the content in any way!
+Ficamos felizes se você reutilizar o conteúdo de qualquer forma!
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-

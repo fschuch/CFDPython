@@ -1,4 +1,4 @@
 *.swp
-lessons/.ipynb_checkpoints
+tarefas/.ipynb_checkpoints
 .env
 .DS_Store
