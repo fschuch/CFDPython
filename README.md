@@ -6,6 +6,8 @@ Esta é uma adaptação e tradução para português por [Felipe N. Schuch](http
 
 > Barba, Lorena A., and Forsyth, Gilbert F. (2018). CFD Python: the 12 steps to Navier-Stokes equations. _Journal of Open Source Education_, **1**(9), 21, https://doi.org/10.21105/jose.00021
 
+[![DOI](https://jose.theoj.org/papers/10.21105/jose.00021/status.svg)](https://doi.org/10.21105/jose.00021)
+
 O módulo assume que o leitor tenha conhecimentos básicos sobre programação (qualquer linguagem) e alguma familiaridade com equações diferenciais e mecânica dos fluidos. Os "passos" foram inspirados pelas ideias do Dr. Rio Yokota, que era um pós-doc no laboratório da Prof. Barba até 2011, e as lições foram refinadas pela Prof. Barba e seus estudantes ao longo de vários semestres de ensino do curso de CFD.
 O curso foi transcrito para o conjunto de Júpiter Notebooks em 2013 para ensinar em um curso intensivo de dois dias em Mendoza, Argentina.
 
@@ -27,46 +29,42 @@ Lições
 
 Passos 1 a 4 são em uma direção espacial. Passos 5 a 10 são em duas dimensões (2D). Passos 11 e 12 resolvem as equações da Navier-Stokes em 2D. Três Notebooks "bônus" cobrem a condição CFL de estabilidade, operações de arranjos multi-dimensionais com NumPy e definição de funções em Python.
 
-* [Ligeira Introdução à Python](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/00_Ligeira_Intro_Python_.ipynb)
+* [Ligeira Introdução à Python](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/00_Ligeira_Intro_Python_.ipynb)
 -- Para novatos em Python, essa lição introduz bibliotecas numéricas (NumPy e Matplotlib), variáveis em Python, endentação e manipulação de arranjos.
-* [Passo 1](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/01_Passo_1.ipynb)
+* [Passo 1](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/01_Passo_1.ipynb)
 -- Convecção linear com avanço à partir da condição inicial (CI) e condições de contorno (CC) apropriadas.
-* [Passo 2](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/02_Passo_2.ipynb)
+* [Passo 2](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/02_Passo_2.ipynb)
 -- Com as mesmas CI/BCs, convecção _não linear_.
-* [Condição CFL](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/03_Condicao_CFL.ipynb)
+* [Condição CFL](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/03_Condicao_CFL.ipynb)
 -- Explorando a estabilidade numérica e a condição de Courant-Friedrichs-Lewy (CFL).
-* [Passo 3](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/04_Passo_3.ipynb)
+* [Passo 3](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/04_Passo_3.ipynb)
 -- Com as mesmas CI/BCs, apenas _difusão_.
-* [Passo 4](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/05_Passo_4.ipynb)
+* [Passo 4](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/05_Passo_4.ipynb)
 -- Equação de Burgers, com CI _dente de serra_ e CC periódica (e uma introdução ao SymPy).
-* [Operações com arranjos em NumPy](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/06_Operacoes_de_arranjos_com_NumPy.ipynb)
-* [Passo 5](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/07_Passo_5.ipynb)
+* [Operações com arranjos em NumPy](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/06_Operacoes_de_arranjos_com_NumPy.ipynb)
+* [Passo 5](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/07_Passo_5.ipynb)
 -- Convecção linear 2D com CI função quadrada e CC apropriadas.
-* [Passo 6](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/08_Passo_6.ipynb)
+* [Passo 6](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/08_Passo_6.ipynb)
 -- Com as mesmas CI/BCs, convecção _não linear_ 2D.
-* [Passo 7](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/09_Passo_7.ipynb)
+* [Passo 7](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/09_Passo_7.ipynb)
 -- Com as mesmas CI/BCs, _difusão_ 2D.
-* [Passo 8](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/10_Passo_8.ipynb)
+* [Passo 8](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/10_Passo_8.ipynb)
 -- Equação de Burgers 2D.
-* [Definindo Funções em Python](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/11_Definindo_Funcoes_em_Python.ipynb)
-* [Passo 9](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/12_Passo_9.ipynb)
+* [Definindo Funções em Python](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/11_Definindo_Funcoes_em_Python.ipynb)
+* [Passo 9](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/12_Passo_9.ipynb)
 -- Equação de Laplace 2D com CI zero e CC ambas Neumann e Dirichlet.
-* [Passo 10](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/13_Passo_10.ipynb)
+* [Passo 10](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/13_Passo_10.ipynb)
 -- Equação de Poisson 2D.
-* [Passo 11](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/14_Passo_11.ipynb)
+* [Passo 11](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/14_Passo_11.ipynb)
 -- Resolve o escoamento em Cavidade com Navier-Stokes 2D.
-* [Passo 12](http://nbviewer.jupyter.org/github/schuch/CFDPython-BR/blob/master/tarefas/15_Passo_12.ipynb)
+* [Passo 12](http://nbviewer.jupyter.org/github/fschuch/CFDPython-BR/blob/master/tarefas/15_Passo_12.ipynb)
 -- Resolve o escoamento em Canal com Navier–Stokes 2D.
-
-
-
 
 ## Dependências
 
 Para executar estas lições, você precisa de Python 3 e um conjunto das bibliotecas científicas padrões: NumPy, Matplotlib, SciPy e SymPy. E claro, você precisa de [Jupyter](http://jupyter.org), um ambiente multiplataforma e interativo, que roda no navegador web.
 
 Este mini curso é construído em uma série de [Jupyter notebooks](https://jupyter-notebook.readthedocs.org/en/latest/notebook.html), que contem tanto o material descritivo quanto as soluções propostas programadas em Python. Para trabalhar com este material, recomenda-se que você comece cada lição com um novo notebook em branco e siga lado a lado, digitando cada linha de código (não copie e cole!), aproveite para explorar modificando parâmetros e vendo o que acontecerá.
-
 
 #### Intalação via Anaconda
 
@@ -86,7 +84,6 @@ conda update conda
 conda install jupyter
 conda install numpy scipy sympy matplotlib
 ```
-
 
 #### Sem Anaconda
 
