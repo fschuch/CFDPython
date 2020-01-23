@@ -1,7 +1,7 @@
 
-# CFD Python
+# CFD com Python
 
-**CFD Python**, também conhecido como os **12 passos para Navier-Stokes**, é um módulo prático para o aprendizado dos fundamentos de Dinâmica dos Fluidos Computacional (CFD, do Inglês *Computational Fluid Dynamics*) por meio de códigos que resolvem as equações diferenciais parciais que descrevem a física dos escoamentos.
+**CFD com Python**, também conhecido como os **12 passos para Navier-Stokes**, é um módulo prático para o aprendizado dos fundamentos de Dinâmica dos Fluidos Computacional (CFD, do Inglês *Computational Fluid Dynamics*) por meio de códigos que resolvem as equações diferenciais parciais que descrevem a física dos escoamentos.
 Esta é uma adaptação e tradução para português por [Felipe N. Schuch](https://fschuch.github.io/). Os textos e códigos originais foram parte do curso ministrado pela [Prof. Lorena Barba](http://lorenabarba.com) entre 2009 e 2013 no departamento de Engenharia Mecânica da Universidade de Boston (Prof. Barba então se mudou para Universidade George Washington), e estão publicado em:
 
 > Barba, Lorena A., and Forsyth, Gilbert F. (2018). CFD Python: the 12 steps to Navier-Stokes equations. _Journal of Open Source Education_, **1**(9), 21, https://doi.org/10.21105/jose.00021
@@ -25,7 +25,7 @@ Lições
 -------
 
 > Execute uma seção interativa desta versão do CFD Python em seu navegador usando o serviço Binder:
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/fschuch/CFDPython/master)
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/fschuch/CFDPython-BR/master/)
 
 Passos 1 a 4 são em uma direção espacial. Passos 5 a 10 são em duas dimensões (2D). Passos 11 e 12 resolvem as equações da Navier-Stokes em 2D. Três Notebooks "bônus" cobrem a condição CFL de estabilidade, operações de arranjos multi-dimensionais com NumPy e definição de funções em Python.
 
